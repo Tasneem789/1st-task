@@ -528,6 +528,7 @@ transition: all 0.3s ease-in;
 
  .cal-row h2{
   font-family: 'Raleway', sans-serif;
+  text-align: center;
  }
 
  .calc-calc{
@@ -627,3 +628,34 @@ input[type=number]::-webkit-outer-spin-button {
 .dark-back{
   display: none;
 }
+
+
+  /** For smaller mobile devices  less than 767px **/
+  @media (max-width: 767px){
+
+    .contact-display{
+      left: 5%;
+    }
+    
+    .about-display{
+
+      left: 5%;
+    }
+    
+    .contact-div{
+      width: 450px;
+      height: 600px;
+      border-radius: 67% 33% 70% 30% / 21% 58% 42% 79% ;
+    }
+
+    .about-div{
+
+      width: 400px;
+      height: 600px;
+      border-radius: 37% 63% 45% 55% / 61% 62% 38% 39% ;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    
+
+  }
