@@ -625,10 +625,14 @@ input[type=number]::-webkit-outer-spin-button {
       justify-content: center;
       padding: 10px 90px;
       padding-top: 10px;
-      width: 400px !important;
-      height: 480px !important;
+      width: 350px !important;
+      height: 580px !important;
       border-radius: 67% 33% 70% 30% / 21% 58% 42% 79% ;
       transition: all 0.3s ease-in-out;
+    }
+
+    .put{
+      flex-direction: column;
     }
 
     .contact-div label{
@@ -636,7 +640,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .contact-display{
-      left: 2%;
+      left: 5%;
+      top: 15%;
     }
 
     .contact-div textarea{
@@ -644,15 +649,16 @@ input[type=number]::-webkit-outer-spin-button {
     }
     
     .about-display{
-      left: 2%;
+      left: 7%;
+      top: 20%;
     }
 
     .about-div{
       justify-content: center;
       padding: 10px 20px;
       padding-top: 10px;
-      width: 550px;
-      height: 450px !important;
+      width: 300px !important;
+      height: 350px !important;
       border-radius: 37% 63% 45% 55% / 61% 62% 38% 39% ;
       transition: all 0.3s ease-in-out;
     }
@@ -660,7 +666,7 @@ input[type=number]::-webkit-outer-spin-button {
     .about-display p{
       padding: 30px 50px;
       text-align: center;
-      font-size: 16px;
+      font-size: 12px;
     }
     
     .contact-div{
