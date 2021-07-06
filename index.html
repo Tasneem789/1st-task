@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+        <!--css stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Animate animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+        <!--Font awseome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <button id="myMoon" class="moon" onclick="myDarkMode()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+      </svg>
+    </button>
+
+    <button id="mySun" class="sun" onclick="myLightMode()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+          </svg>
+    </button>
+    
+    <div class="home-div">
+        <div class="home-logo">
+            <img class="mx-auto mx-lg-5 text-center light-logo" id="LightLogo" src="img/logo.png" alt="">
+            <img class="mx-auto mx-lg-5 text-center dark-logo" id="DarkLogo" src="img/logo-dark.png" alt="">
+        </div>
+
+        <div class="home-nav">
+            <nav class="navbar navbar-expand-lg justify-content-around py-lg-2 py-md-1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" onclick="openNav(this)">
+                    <div class="burger" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
+                </span>
+                  
+                </button>
+                <div class="collapse navbar-collapse justify-content-end px-5 py-4 mx-lg-5" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a id="NavLink1" class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="NavLink2" class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="NavLink3" class="nav-link" href="#">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="NavLink4" class="nav-link" href="#">About</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+
+
+    <div class="main-img col-lg-10 col-md-12 col-sm-12 mx-auto">
+      <div class="container mx-auto">
+        <h3>Front-End Developer</h3>
+    </div>
+    </div>
+
+
+<br><br><br><br><br><br><br><br>
+
+
+<div class="about-section">
+      <div class="contact-btn">
+        <button id="Btn" onclick="document.getElementById('contact-model').style.display='block'" style="width:auto;">Contact</button>
+    </div>
+
+      <div class="about-btn">
+        <button id="Btn" onclick="document.getElementById('about-model').style.display='block'" style="width:auto;">About</button>
+    </div>
+
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+
+<div class="cal-row">
+  <div class="calc-txt">
+    <h2>What if we wanted to calculate your age on Mars?</h2>
+
+  </div>
+  <div class="calc-calc">
+                <div class="number-input">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">-</button>
+                    <div class="input-div"><input id="age-num"  class="quantity" min="0" name="quantity" value="1" type="number" max="100" min="1"></div>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                  </div>
+    <button class="calc-btn" onclick="CalcAge()">Calculate</button>
+  </div>
+  <div class="answer-txt">
+    <p id="answer" class="answer"></p>
+    <div><p class="comment" id="comment"></p></div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="about-display" id="about-model">
+            <div class="about-div animate mx-auto">
+              <button onclick="document.getElementById('about-model').style.display='none'">X</button>
+                <p><strong>Hey!</strong> I'm Tasneem Ibrahim a 23 years old Egyption Registered nurse, an artist, and finally a Front-End Developer.
+                  <br>Hope you enjoyed my small website<br> Oh! I almost forget to invite you to play with my small humble calculator.
+                  <br> Just try it and contact us for feedback or any services.</p>
+    </div>
+      </div>
+
+    <br>
+
+
+
+
+
+    <div class="contact-display" id="contact-model">
+      <div class="contact-div animate mx-auto">
+        <button onclick="document.getElementById('contact-model').style.display='none'">X</button>
+        <div><h2>Contact Us</h2></div>
+        <div class="put">
+        <label for="name"><b>Full Name</b></label>
+        <input type="text" placeholder="" name="name" required>
+        </div>
+        
+        <div class="put">
+        <label for="mail"><b>Email</b></label>
+        <input type="email" placeholder=" " name="mail" required>
+        </div>
+        
+        <div class="put">
+        <label for="describ">Project description</label>
+        <textarea name="describ" id="" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div style="margin-top: 30px;">
+        <label for="date">When you want your service to be done?</label>
+        </div>
+        
+        <div class="row">
+        
+        
+        <div class="put-date row-put">
+        <label for="day">d d</label>
+        <input type="number" name="day" id="" maxlength="1" min="1" max="31">
+        </div>
+        
+        <div class="put-date row-put">
+        <label for="month">m m</label>
+        <input type="number" name="month" id="" max="12" min="1" maxlength="2">
+        </div>
+        
+        <div class="put-date">
+        <label for="year">y y y y</label>
+        <input type="number" name="year" id="" max="2040" min="2021" maxlength="4">
+        </div>
+        </div>
+        
+        <div>
+        <button type="submit">Submit</button>
+        </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <!--JQUERY-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
